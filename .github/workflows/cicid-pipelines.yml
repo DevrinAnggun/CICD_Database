@@ -23,4 +23,8 @@ jobs:
           script: |
             echo "Berhasil Connect ke Server"
 
-         
+            cd /home/anggun/CICD_Database
+            echo "Berhasil Masuk ke Folder"
+
+            sudo docker compose up -d # Menjalankan docker compose di server 
+            echo "Berhasil Menjalankan Docker Compose"
