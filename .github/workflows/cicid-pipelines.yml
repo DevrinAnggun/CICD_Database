@@ -26,5 +26,5 @@ jobs:
             cd/home/das
             echo "Berhasil Masuk ke Folder das"
 
-            docker compose up -d # Menjalankan docker compose di server 
+            sudo docker compose up -d # Menjalankan docker compose di server 
             echo "Berhasil Menjalankan Docker Compose"
