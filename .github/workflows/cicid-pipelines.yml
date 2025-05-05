@@ -19,6 +19,12 @@ jobs:
           username: ${{ secrets.SERVER_USER }} # The username to log in to the remote server
           password: ${{ secrets.SERVER_PASSWORD }} # The password for the remote server
           port: ${{ secrets.PORT }}
-          
+
           script: |
             echo "Berhasil Connect ke Server"
+
+            cd/home/das
+            echo "Berhasil Masuk ke Folder das"
+
+            docker compose up -d # Menjalankan docker compose di server 
+            echo "Berhasil Menjalankan Docker Compose"
