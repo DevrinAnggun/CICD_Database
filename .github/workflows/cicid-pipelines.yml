@@ -19,12 +19,11 @@ jobs:
           username: ${{ secrets.SERVER_USER }} # The username to log in to the remote server
           password: ${{ secrets.SERVER_PASSWORD }} # The password for the remote server
           port: ${{ secrets.PORT }}
-
           script: |
             echo "Berhasil Connect ke Server"
 
             cd /home/anggun/CICD_Database
             echo "Berhasil Masuk ke Folder"
 
-            sudo docker compose up -d # Menjalankan docker compose di server 
-            echo "Berhasil Menjalankan Docker Compose"
+            sudo docker compose up -d # Start the Docker containers in detached mode
+            echo "Berhasil Jalankan Docker Compose"
