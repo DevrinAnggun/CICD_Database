@@ -23,8 +23,4 @@ jobs:
           script: |
             echo "Berhasil Connect ke Server"
 
-            cd /home/dep/CICD_Database
-            echo "Berhasil Masuk ke Folder devrin"
-
-            sudo docker compose up -d # Menjalankan docker compose di server 
-            echo "Berhasil Menjalankan Docker Compose"
+         
